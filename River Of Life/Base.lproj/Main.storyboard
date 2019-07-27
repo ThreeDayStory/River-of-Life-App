@@ -81,5 +81,89 @@ We're glad you're here</string>
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
+        <!--Welcome Page View Controller-->
+        <scene sceneID="50b-sq-Ejp">
+            <objects>
+                <viewController id="fYu-fu-rrV" customClass="WelcomePageViewController" customModule="River_Of_Life" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iwh-ND-MNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hsj-3n-vBr">
+                                <rect key="frame" x="20" y="418" width="374" height="424"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-Ui-6Xq">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="nEJ-H1-rXn"/>
+                                        </constraints>
+                                        <state key="normal" title="GIVE"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuv-XC-2a7">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="60"/>
+                                        <state key="normal" title="CALENDAR"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i0-UX-bvU">
+                                        <rect key="frame" x="0.0" y="140" width="374" height="60"/>
+                                        <state key="normal" title="MEDIA"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1M-IO-8qz">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="60"/>
+                                        <state key="normal" title="CONNECT"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-QT-WrO">
+                                        <rect key="frame" x="0.0" y="280" width="374" height="144"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="144" id="PDF-yJ-Jei"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3i0-UX-bvU" firstAttribute="height" secondItem="cuv-XC-2a7" secondAttribute="height" id="9nP-tn-aHv"/>
+                                    <constraint firstItem="L1M-IO-8qz" firstAttribute="height" secondItem="3i0-UX-bvU" secondAttribute="height" id="Ihp-cZ-DpS"/>
+                                    <constraint firstItem="cuv-XC-2a7" firstAttribute="height" secondItem="n0g-Ui-6Xq" secondAttribute="height" id="ec2-8a-iIO"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jQQ-6m-iXw">
+                                <rect key="frame" x="20" y="108" width="374" height="285.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hsj-3n-vBr" firstAttribute="leading" secondItem="jQQ-6m-iXw" secondAttribute="leading" id="AGN-UW-wfu"/>
+                            <constraint firstItem="ehp-Vq-nZf" firstAttribute="trailing" secondItem="jQQ-6m-iXw" secondAttribute="trailing" constant="20" id="TCn-iv-jay"/>
+                            <constraint firstItem="Hsj-3n-vBr" firstAttribute="trailing" secondItem="jQQ-6m-iXw" secondAttribute="trailing" id="Vax-CJ-nuM"/>
+                            <constraint firstItem="jQQ-6m-iXw" firstAttribute="leading" secondItem="ehp-Vq-nZf" secondAttribute="leading" constant="20" id="XnE-gT-9TH"/>
+                            <constraint firstItem="jQQ-6m-iXw" firstAttribute="top" secondItem="ehp-Vq-nZf" secondAttribute="top" constant="20" id="a9C-L5-eXS"/>
+                            <constraint firstItem="ehp-Vq-nZf" firstAttribute="bottom" secondItem="Hsj-3n-vBr" secondAttribute="bottom" constant="20" id="h43-NV-xrF"/>
+                            <constraint firstItem="jQQ-6m-iXw" firstAttribute="centerX" secondItem="iwh-ND-MNc" secondAttribute="centerX" id="prg-MU-2yu"/>
+                            <constraint firstItem="Hsj-3n-vBr" firstAttribute="firstBaseline" secondItem="jQQ-6m-iXw" secondAttribute="baseline" constant="60" id="yCM-rf-INJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ehp-Vq-nZf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rFP-FH-pDr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5l-Qc-RYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yyX-Kc-dFK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BSN-dw-A2o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oyT-Gv-sUr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fYu-fu-rrV" kind="relationship" relationship="rootViewController" id="AUI-WB-hpg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKa-Ic-mzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="23.4375"/>
+        </scene>
     </scenes>
 </document>
