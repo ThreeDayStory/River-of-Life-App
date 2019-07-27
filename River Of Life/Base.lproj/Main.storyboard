@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="River_Of_Life" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2to-GM-Qtz">
+                                <rect key="frame" x="40" y="346" width="334" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omL-Jb-Xw8" userLabel="Facebook Login">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Xla-ec-Ie4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login with FaceBook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-mB-49k" userLabel="Twitter Login">
+                                        <rect key="frame" x="0.0" y="72" width="334" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login with Twitter"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-yn-xL7" userLabel="Email Login">
+                                        <rect key="frame" x="0.0" y="144" width="334" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login with Email"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xBp-mB-49k" firstAttribute="centerX" secondItem="omL-Jb-Xw8" secondAttribute="centerX" id="0D7-gB-PKT"/>
+                                    <constraint firstItem="7eE-yn-xL7" firstAttribute="height" secondItem="xBp-mB-49k" secondAttribute="height" id="J1E-Bw-whq"/>
+                                    <constraint firstItem="7eE-yn-xL7" firstAttribute="centerX" secondItem="xBp-mB-49k" secondAttribute="centerX" id="dSV-zU-hEV"/>
+                                    <constraint firstItem="xBp-mB-49k" firstAttribute="height" secondItem="omL-Jb-Xw8" secondAttribute="height" id="gCp-Fw-ceF"/>
+                                    <constraint firstItem="omL-Jb-Xw8" firstAttribute="centerX" secondItem="2to-GM-Qtz" secondAttribute="centerX" id="y0l-Hv-US5"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFr-Uc-AS4" userLabel="Login">
+                                <rect key="frame" x="119.5" y="650" width="175" height="30"/>
+                                <state key="normal" title="I already have an account"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-C5-ld6">
+                                <rect key="frame" x="115" y="168" width="186" height="118"/>
+                                <string key="text">Welcome  River of Life
+We're glad you're here</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2to-GM-Qtz" firstAttribute="top" secondItem="M9h-C5-ld6" secondAttribute="bottom" constant="60" id="2Ic-LB-TGz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M9h-C5-ld6" secondAttribute="trailing" constant="113" id="7sF-Lw-Xt8"/>
+                            <constraint firstItem="2to-GM-Qtz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="I0l-Kz-1Vv"/>
+                            <constraint firstItem="2to-GM-Qtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KUk-26-ajA"/>
+                            <constraint firstItem="M9h-C5-ld6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="MkP-Sp-ycR"/>
+                            <constraint firstItem="xFr-Uc-AS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PVk-pa-94j"/>
+                            <constraint firstItem="2to-GM-Qtz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T5m-UE-U4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2to-GM-Qtz" secondAttribute="trailing" constant="40" id="Vts-rX-r8j"/>
+                            <constraint firstItem="xFr-Uc-AS4" firstAttribute="top" secondItem="7eE-yn-xL7" secondAttribute="bottom" constant="100" id="cfq-AO-v1M"/>
+                            <constraint firstItem="M9h-C5-ld6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="kK1-9K-oYc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
